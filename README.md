@@ -1,6 +1,6 @@
 # Google Finance Portfolio CSV Importer
 
-A Chrome/Edge extension that allows you to upload CSV files containing stock symbols and automatically add them to your Google Finance portfolio with default settings.
+A Chrome/Edge extension that allows you to upload CSV files containing stock symbols and automatically add them to your Google Finance portfolio with default settings. Upload or add stocks to your Google finance portfolio via a CSV file.
 
 ## Features
 
