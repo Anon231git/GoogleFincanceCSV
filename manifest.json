@@ -3,6 +3,7 @@
   "name": "Google Finance Portfolio CSV Importer",
   "version": "1.0",
   "description": "Upload CSV files to automatically add stocks to your Google Finance portfolio",
+  "language": "en",
   "permissions": [
     "activeTab",
     "storage"
