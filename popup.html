@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 18px;
+            color: #1a73e8;
+            margin: 0;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #202124;
+            font-size: 16px;
+        }
+        
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 5px 0;
+        }
+        
+        .csv-format {
+            background: #e8f0fe;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #856404;
+        }
+        
+        .status {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        
+        .status.active {
+            color: #137333;
+            background: #e8f5e8;
+            border-radius: 4px;
+        }
+        
+        .status.inactive {
+            color: #d93025;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CSV Portfolio Importer</h1>
+    </div>
+    
+    <div class="instructions">
+        <h3>How to Use:</h3>
+        <ol>
+            <li>Open your Google Finance portfolio page</li>
+            <li>The CSV uploader will appear in the top-right corner</li>
+            <li>Upload a CSV file with stock symbols</li>
+            <li>Configure settings and click "Add Stocks to Portfolio"</li>
+        </ol>
+        
+        <h3>CSV Format:</h3>
+        <div class="csv-format">
+Symbol,Name<br>
+AAPL,Apple Inc<br>
+GOOGL,Alphabet Inc<br>
+MSFT,Microsoft<br>
+TSLA,Tesla Inc
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> The extension will automatically detect columns with headers like "symbol", "stock", "name", or "ticker". If no headers are found, it will use the first column.
+        </div>
+    </div>
+    
+    <div id="status" class="status inactive">
+        Please navigate to a Google Finance portfolio page to use this extension.
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
